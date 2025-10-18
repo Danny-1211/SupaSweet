@@ -1,0 +1,8 @@
+// src/lib/supabase.js
+import { createClient } from '@supabase/supabase-js'
+
+// 跟你建立的資料庫專案進行連線
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey)
