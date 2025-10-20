@@ -1,11 +1,9 @@
-import { useState } from 'react'
-
+import Home from "./pages/Home";
 function App() {
-  return (
-    <>
-      <h1>hello world!</h1>
-    </>
+    return (
+      <div className="max-full mx-auto">
+        <Home />
+      </div>
   )
 }
-
 export default App
