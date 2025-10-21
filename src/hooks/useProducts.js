@@ -20,6 +20,5 @@ export function useProducts(options = {}) {
             setProducts(data || []);
         }
     };
-
     return {products, error};
 }

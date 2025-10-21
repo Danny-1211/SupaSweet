@@ -84,3 +84,13 @@
 .writing-vertical {
     writing-mode: vertical-rl;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* 隱藏 Chrome/Safari 捲軸 */
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+    /* 隱藏 Firefox 捲軸 */
+}

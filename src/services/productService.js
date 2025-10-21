@@ -6,9 +6,12 @@ export async function getProducts(options = {}) {
 
     try {
         let query = null;
-        if (category == 'all') {
-            query = supabase.from('product').select('*'); // 先預設先拿全部
+        query = supabase.from('product').select('*');
+
+        if (category && category !== 'ALL') {
+            query = query.eq('category', category);
         }
+
         const { data } = await query;
         return { data, error: null };
 
