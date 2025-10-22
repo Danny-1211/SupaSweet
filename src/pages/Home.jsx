@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Card from '../components/Card';
+import Footer from '../components/Footer';
 import homeBanner from "../assets/images/home_banner.png";
 import whyDoSlogan from "../assets/images/whyDo.png";
 import whyDoSloganMobile from '../assets/images/whyDo_horizan.png';
@@ -114,12 +115,11 @@ export function Home() {
                         </div>
                     </div>
                 </div>
-
+                {/* 想吃甜點不需要理由 */}
                 <div className="dontReason-slogan w-full flex justify-center items-center  px-[74px] py-[30px] lg:py-[50px]">
                     <img className="hidden lg:flex lg:w-[89px]" src={dontReasonSlogan} alt="dontReasonSlogan" />
                     <img className="w-[226px] lg:hidden" src={dontReasonSloganMobile} alt="dontReasonSloganMobile" />
                 </div>
-
                 <div className="dontReason-List w-full flex justify-start  items-center overflow-x-auto no-scrollbar scroll-smooth  snap-x snap-mandatory px-[30px] 
                 gap-[50px] lg:justify-center  lg:gap-[20px]">
                     {
@@ -131,6 +131,7 @@ export function Home() {
                     }
                 </div>
             </main>
+            <Footer />
         </div>
     )
 }
