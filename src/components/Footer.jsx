@@ -8,7 +8,7 @@ import footerSlogan from '../assets/images/wantToEat.png';
 export function Footer() {
     return (
         <>
-            <div className="bg-[#EAF0ED]">
+            <footer className="bg-[#EAF0ED]">
                 <div className="footer-sub w-full flex flex-col justify-center items-center bg-[#3F5D45] mt-[30px] lg:max-w-[100%]">
                     <div className="sub-mail w-full flex flex-col justify-center items-center bg-[#3F5D45] mt-[30px] px-[30px] py-[30px] gap-[33px]
             lg:flex-row  lg:gap-[60px]">
@@ -32,7 +32,7 @@ export function Footer() {
                 <div className="footer-intro w-full  flex flex-col justify-between items-start px-[30px] py-[40px] gap-[23px] 
                 lg:max-w[1024px] lg:pl-[160px] lg:flex-row lg:justify-center lg:items-center lg:gap-0">
                     <div className="footer-left w-full flex flex-col justify-start items-start gap-[40px]
-                    lg:gap-[115px] ">
+                    lg:gap-[115px]  ">
                         <div className="left-log">
                             <img className="object-cover w-[171px]" src={logoType} alt="logoType" />
                         </div>
@@ -59,7 +59,7 @@ export function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </footer>
         </>
     )
 }
