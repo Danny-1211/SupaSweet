@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from "../assets/images/logo-all-dark.svg";
 import logoMobile from "../assets/images/logotype-sm-dark.svg";
 import cart from "../assets/images/shopping_cart.png";
@@ -11,10 +12,10 @@ export function Header() {
             <img className="w-auto h-[18px] lg:hidden" src={logoMobile} alt="logoMobile" />
             <div className="flex items-center justify-between gap-[80px]">
                 <div className="hidden lg:flex justify-between items-center gap-[60px]">
-                    <a href="#">首頁</a>
-                    <a href="#">甜點</a>
-                    <a href="#">登入</a>
-                </div>
+                    <Link to="/">首頁</Link>
+                    <Link to="/products">甜點</Link>
+                    <Link to="/">登入</Link>
+                </div>  
                 <img className="w-auto h-[24px]" src={cart} alt="cart" />
             </div>
         </header>

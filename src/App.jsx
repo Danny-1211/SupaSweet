@@ -1,9 +1,15 @@
-import Home from "./pages/Home";
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { Outlet } from 'react-router-dom';
 function App() {
-    return (
-      <div className="max-full mx-auto">
-        <Home />
-      </div>
+  return (
+    <div className="max-full mx-auto">
+      <Header />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   )
 }
 export default App
