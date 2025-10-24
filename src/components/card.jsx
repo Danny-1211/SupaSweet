@@ -1,10 +1,7 @@
 import favoriteIcon from '../assets/images/favorite_border.png';
+import { CATEGORY_LIST } from '../utils/productUtils.js';
+
 export function Card({ product }) {
-    const categoryTable = {
-        'DAILY': '本日精選',
-        'NEW': '新品上市',
-        'RECOMMEND': '人氣推薦'
-    }
     return (
         <>
             <div className="card flex-shrink-0  w-full  flex flex-col justify-between items-center  lg:w-[300px]  border border-[#EAF0ED]">
@@ -12,7 +9,7 @@ export function Card({ product }) {
                     <img className="object-cover w-full h-full" src={product.pic} alt={product.name} />
                     <div className="card-tag flex flex-col justify-center items-center writing-vertical bg-[#3F5D45] 
                     text-[#EAF0ED] tracking-[0.2rem] font-['PingFang_TC'] font-semibold leading-[16px] text-[20px] px-[10px] py-[10px]">
-                        <p>{categoryTable[product.category] ? categoryTable[product.category] : '本日精選'}</p>
+                        <p>{CATEGORY_LIST.find(e => e.value == product.category) ? CATEGORY_LIST[CATEGORY_LIST.findIndex(e => e.value == product.category)].label : '本日精選'}</p>
                     </div>
                     <div className="card-favorite">
                         <img src={favoriteIcon} alt="favoriteIcon" />

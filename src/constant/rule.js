@@ -7,3 +7,6 @@ export const CATEGORY = {
     RECOMMEND: {value:'recommend', label: '人氣推薦'},
     DAILY: {value:'daily', label: '本日精選'}
 }
+
+// 商品列表一頁最多6個
+export const MAX_COUNT = 6;
