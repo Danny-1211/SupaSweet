@@ -40,6 +40,12 @@ export function returnFilterProducts(products, category) {
 }
 
 // 計算選擇該類別下總分頁數
-export function calculateTotalPage(dataLength,maxCount){
+export function calculateTotalPage(dataLength, maxCount) {
     return Math.ceil(dataLength / maxCount)
+}
+
+export function getCurrentPageProducts(filterProducts, currentPage, maxCount) {
+    const start = (currentPage - 1) * maxCount;
+    const end = start + maxCount;
+    return filterProducts.slice(start, end);
 }
