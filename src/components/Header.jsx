@@ -14,7 +14,7 @@ export function Header() {
                 <div className="hidden lg:flex justify-between items-center gap-[60px]">
                     <Link to="/">首頁</Link>
                     <Link to="/products">甜點</Link>
-                    <Link to="/">登入</Link>
+                    <Link to="/login">登入</Link>
                 </div>  
                 <img className="w-auto h-[24px]" src={cart} alt="cart" />
             </div>

@@ -21,7 +21,7 @@ export function Footer() {
                         <div className="mail-input w-full flex  justify-center items-center">
                             <div className="input-group ">
                                 <img className="mail-icon" src={mailIcon} alt="mailIcon" />
-                                <input className="bg-[#EAF0ED] py-[20px] pl-[48px] lg:w-[380px]" type="text" name="please write something" id="" />
+                                <input className="bg-[#EAF0ED] py-[20px] pl-[48px] lg:w-[380px]" type="text" name="mail" id="" />
                             </div>
                             <div className="input-arrow bg-[#FFE180] px-[24px] py-[20px]">
                                 <img src={arrowIcon} alt="arrowIcon" />
@@ -30,7 +30,7 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="footer-intro w-full  flex flex-col justify-between items-start px-[30px] py-[40px] gap-[23px] 
-                lg:max-w[1024px] lg:pl-[160px] lg:flex-row lg:justify-center lg:items-center lg:gap-0">
+                lg:max-w[1024px] lg:pl-[230px] lg:flex-row lg:justify-center lg:items-center lg:gap-0">
                     <div className="footer-left w-full flex flex-col justify-start items-start gap-[40px]
                     lg:gap-[115px]  ">
                         <div className="left-log">
@@ -50,7 +50,7 @@ export function Footer() {
                         </div>
                     </div>
                     <div className="footer-right w-full flex flex-col justify-start items-start  
-                    lg:items-end lg:justify-end lg:pr-[80px] lg:gap-[46px]">
+                    lg:items-end lg:justify-end lg:pr-[100px] lg:gap-[46px]">
                         <div className="left-logo hidden lg:flex">
                             <img className="lg:max-w-[59px]" src={footerSlogan} alt="logoType" />
                         </div>
