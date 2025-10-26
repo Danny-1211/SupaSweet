@@ -15,8 +15,10 @@ export function Header() {
                     <Link to="/">首頁</Link>
                     <Link to="/products">甜點</Link>
                     <Link to="/login">登入</Link>
-                </div>  
-                <img className="w-auto h-[24px]" src={cart} alt="cart" />
+                </div>
+                <Link to="/cart">
+                    <img className="w-auto h-[24px] cursor-pointer" src={cart} alt="cart" />
+                </Link>
             </div>
         </header>
     )

@@ -3,7 +3,7 @@ import App from '../App.jsx';
 import Home from '../pages/Home.jsx';
 import Products from '../pages/Products.jsx';
 import Login from '../pages/Login.jsx';
-
+import Cart from '../pages/Cart.jsx';
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -20,6 +20,10 @@ export const router = createBrowserRouter([
             {
                 path: "login",
                 element: <Login />
+            },
+            {
+                path: "cart",
+                element: <Cart />
             }
         ]
     }
