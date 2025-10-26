@@ -43,7 +43,7 @@ export function Login() {
             </div>
 
             {/* 電腦版 */}
-            <div className="hidden lg:w-full lg:max-w-[1024px] lg:flex  lg:mx-auto lg:mb-[60px]">
+            <div className="hidden lg:w-full lg:max-w-[1024px] lg:flex  lg:mx-auto mb-[60px]">
                 <div className="login-input w-full bg-[#3F5D45]">
                     <div className="w-full login-title flex justify-center items-center text-center py-[30px] px-[116px] whitespace-nowrap">
                         <h2 className="text-[#EAF0ED] font-['PingFang TC'] leading-[36px] text-[36px] font-semibold">會員登入</h2>
@@ -67,7 +67,7 @@ export function Login() {
                     </div>
                 </div>
                 <div className="connect w-full  bg-[#EAF0ED] lg:flex lg:flex-col lg:items-center lg:justify-center lg:gap-[36px] lg:px-[67px] lg:py-[40px]">
-                    <div className="connect-titlel justify-center items-center">
+                    <div className="connect-title justify-center items-center">
                         <h2 className="text-[#8DA291] font-['PingFang TC'] leading-[36px] text-[24px] font-light">—— 連結社群帳號 ——</h2>
                     </div>
                     <div className=" w-full max-w-[330px] bg-[#FFFFFF] flex justify-center r  px-[118px] py-[12px] items-center">
