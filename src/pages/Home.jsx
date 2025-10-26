@@ -10,11 +10,11 @@ import dontReasonSlogan from '../assets/images/dontReason.png';
 import dontReasonSloganMobile from '../assets/images/dontReason_horizan.png';
 import { useProducts } from "../hooks/useProducts";
 import { CATEGORY } from '../constant/rule.js';
-import "../assets/styles/home.scss";
+import "../assets/styles/pages/home.scss";
 export function Home() {
     const { products, error } = useProducts({ category: CATEGORY.DAILY.value});
     return (
-        <div className="w-full">    
+        <div className="w-full mb-[60px] ">    
             <div className="w-full flex flex-col justify-start lg:px-[42px] lg:py-[30px] lg:mb-[80px]">
                 <div>
                     <img className="w-full mx-auto object-cover sm:h-[277px] lg:max-w-[940px] lg:h-[496px]" src={homeBanner} alt="banner" />

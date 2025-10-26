@@ -1,6 +1,6 @@
 import favoriteIcon from '../assets/images/favorite_border.png';
 import { CATEGORY_LIST } from '../utils/productUtils.js';
-
+import  '../assets/styles/components/card.scss'
 export function Card({ product }) {
     return (
         <>

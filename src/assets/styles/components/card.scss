@@ -1,0 +1,22 @@
+@use '../breakpoint' as *;
+.card-tag {
+    position: absolute;
+    left: 20px;
+    top: 0;
+
+    @media(max-width:$break_sm) {
+        left: 21px;
+        top: 0;
+    }
+}
+
+.card-favorite {
+    position: absolute;
+    top: 20px;
+    right: 18px;
+
+    @media(max-width:$break_sm) {
+        right: 18px;
+        top: 20px;
+    }
+}

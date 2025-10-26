@@ -21,7 +21,7 @@ export function Products() {
     }
 
     return (
-        <div className="w-full flex flex-col justify-center items-center">
+        <div className="w-full flex flex-col justify-center items-center mb-[60px]">
             <div className="products-banner w-full lg:max-w-[1024px] mx-auto">
                 <img className="w-full mx-auto object-cover sm:h-[277px]  lg:h-[496px]" src={productBanner} alt="productBanner" />
             </div>
@@ -29,13 +29,13 @@ export function Products() {
             lg:justify-center lg:gap-[100px] lg:mt-[40px]">
                 <div className="list-category w-full flex flex-col justify-center items-center lg:max-w-[300px]">
                     <ul className="text-center w-full  flex flex-col justify-center items-center">
-                        <li className="w-full py-[16px] px-[139px] text-center bg-[#3F5D45] lg:px-[64px]">
+                        <li className="w-full py-[16px] text-center bg-[#3F5D45] lg:px-[64px] whitespace-nowrap">
                             <p className="text-[#EAF0ED] font-semibold text-[24px] leading-[24px] font-['PingFang_TC']">甜點類別</p>
                         </li>
                         {
                             categories?.map((item, index) => {
                                 return (
-                                    <li key={index} onClick={() => switchCategory(item.value)} className={` w-full py-[16px] px-[139px] text-center border-[1px] border-[#EAF0ED] lg:px-[64px]
+                                    <li key={index} onClick={() => switchCategory(item.value)} className={` w-full py-[16px]  text-center border-[1px] border-[#EAF0ED] whitespace-nowrap lg:px-[64px]
                                     ${selectedCategory == item.value ? "bg-[#EAF0ED]" : "bg-white"}`}>
                                         <button className="text-[#3F5D45] font-semibold text-[24px] leading-[24px] font-['PingFang_TC']">{item.label} ({item.count})</button>
                                     </li>

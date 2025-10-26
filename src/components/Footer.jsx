@@ -5,11 +5,12 @@ import logoType from '../assets/images/logotype-lg-dark.svg';
 import lineIcon from '../assets/images/ic-line@.svg';
 import fbIcon from '../assets/images/ic-facebook.svg';
 import footerSlogan from '../assets/images/wantToEat.png';
+import '../assets/styles/components/footer.scss';
 export function Footer() {
     return (
         <>
             <footer className="bg-[#EAF0ED]">
-                <div className="footer-sub w-full flex flex-col justify-center items-center bg-[#3F5D45] mt-[30px] lg:max-w-[100%]">
+                <div className="footer-sub w-full flex flex-col justify-center items-center bg-[#3F5D45] lg:max-w-[100%]">
                     <div className="sub-mail w-full flex flex-col justify-center items-center bg-[#3F5D45] mt-[30px] px-[30px] py-[30px] gap-[33px]
             lg:flex-row  lg:gap-[60px]">
                         <div className="mail w-full flex gap-[20px] justify-center items-center ">

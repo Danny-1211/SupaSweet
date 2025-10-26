@@ -1,0 +1,14 @@
+@use '../breakpoint' as *;
+.input-group {
+    position: relative;
+}
+
+.mail-icon {
+    position: absolute;
+    top:20px;
+    left:24px;
+    @media(max-width:$break_sm) {
+        left: 18px;
+        top: 20px;
+    }
+}
