@@ -6,7 +6,7 @@ import dehaze from "../assets/images/dehaze-24px.png";
 export function Header() {
     return (
         <header className="w-full mx-auto flex items-center justify-between px-[30px] py-[30px]
-        lg:px-0 lg:max-w-[940px]">
+        lg:px-0 lg:max-w-[1024px]">
             <img className="w-auto h-[18px] lg:hidden" src={dehaze} alt="menu" />
             <img className="hidden lg:block w-auto h-[40px]" src={logo} alt="logo" />
             <img className="w-auto h-[18px] lg:hidden" src={logoMobile} alt="logoMobile" />

@@ -17,7 +17,7 @@ export function Home() {
         <div className="w-full mb-[60px] ">    
             <div className="w-full flex flex-col justify-start lg:px-[42px] lg:py-[30px] lg:mb-[80px]">
                 <div>
-                    <img className="w-full mx-auto object-cover sm:h-[277px] lg:max-w-[940px] lg:h-[496px]" src={homeBanner} alt="banner" />
+                    <img className="w-full mx-auto object-cover sm:h-[277px] lg:max-w-[1024px] lg:h-[496px]" src={homeBanner} alt="banner" />
                 </div>
                 <div className="w-full flex items-center justify-center gap-[1px] md:items-center md:justify-center md:-mt-[89px] lg:items-center lg:justify-center lg:-mt-[89px]">
                     <div className="banner-today h-[180px] w-[140px] px-[52px] py[40px] lg:w-[260px] lg:h-[256px]">
@@ -118,7 +118,7 @@ export function Home() {
                 <img className="w-[226px] lg:hidden" src={dontReasonSloganMobile} alt="dontReasonSloganMobile" />
             </div>
             <div className="dontReason-List w-full flex justify-start  items-center overflow-x-auto no-scrollbar scroll-smooth  snap-x snap-mandatory px-[30px] 
-                gap-[50px] lg:justify-center  lg:gap-[20px]">
+                gap-[50px] lg:justify-center  lg:gap-[20px] lg:max-w-[1024px] lg:mx-auto">
                 {
                     products.map((item, index) => {
                         return (
