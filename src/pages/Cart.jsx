@@ -46,7 +46,7 @@ export function Cart() {
                         <div className="item-info w-full max-w-[315px] flex  justify-start items-start gap-[12px] py-[30px]  border-b border-[#EAF0ED]
                         lg:max-w-[690px] lg:justify-center lg:items-center">
                             <div className="info-pic flex-shrink-0 ">
-                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p1} alt="cart_p1" />
+                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p2} alt="cart_p2" />
                             </div>
                             <div className="info-menu  w-full flex flex-col justify-start items-start gap-[8px] lg:flex-row">
                                 <div className="menu-title w-full flex flex-col justify-start items-start gap-[8px] px-[19px]">
@@ -75,7 +75,7 @@ export function Cart() {
                         <div className="item-info w-full max-w-[315px] flex  justify-start items-start gap-[12px] py-[30px]  border-b border-[#EAF0ED]
                         lg:max-w-[690px] lg:justify-center lg:items-center">
                             <div className="info-pic flex-shrink-0 ">
-                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p1} alt="cart_p1" />
+                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p3} alt="cart_p3" />
                             </div>
                             <div className="info-menu  w-full flex flex-col justify-start items-start gap-[8px] lg:flex-row">
                                 <div className="menu-title w-full flex flex-col justify-start items-start gap-[8px] px-[19px]">

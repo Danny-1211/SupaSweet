@@ -1,4 +1,9 @@
 @use '../breakpoint' as *;
+
+.card-img {
+    position: relative;
+}
+
 .card-tag {
     position: absolute;
     left: 20px;
