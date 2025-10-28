@@ -170,13 +170,13 @@ function ElectronicBillForm() {
 function PostBillForm() {
     return (
         <div className="electric-form w-full flex flex-col justify-center items-center  py-[30px] gap-[8px]">
-            <div className="number w-full flex flex-col  justify-start gap-[9px] px-[5px] ">
-                <p className="text-[#EAF0ED] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">統一編號（選填）</p>
-                <input className="bg-[#EAF0ED] py-[17px] pl-[20px]" type="text" name="" id="" placeholder="12345678" />
-            </div>
             <div className="address w-full flex flex-col justify-start gap-[9px] px-[5px]">
-                <div className="address-title">
+                <div className="address-title flex justify-between items-center">
                     <p className="text-[#EAF0ED] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">地址</p>
+                    <div className="flex gap-[8px]">
+                        <input type="checkbox" id="address" name="address"  />
+                        <label className="text-[#EAF0ED] font-['PingFang TC'] leading-[36px] text-[16px] font-semibold" for="address">同運送地址</label>
+                    </div>
                 </div>
                 <div className="city flex gap-[8px] justify-start items-center">
                     <div class="custom-city w-full">
@@ -199,6 +199,10 @@ function PostBillForm() {
                 <div className="road w-full">
                     <input className="w-full bg-[#EAF0ED] text-[#8DA291] font-['PingFang TC'] leading-[20px] text-[16px] font-light py-[17px] px-[20px]" type="text" name="road" id="" placeholder="幸福路 520 號" />
                 </div>
+            </div>
+            <div className="number w-full flex flex-col  justify-start gap-[9px] px-[5px] ">
+                <p className="text-[#EAF0ED] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">統一編號（選填）</p>
+                <input className="bg-[#EAF0ED] py-[17px] pl-[20px]" type="text" name="" id="" placeholder="12345678" />
             </div>
         </div>
     )

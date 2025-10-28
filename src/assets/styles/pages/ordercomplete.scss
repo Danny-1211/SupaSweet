@@ -1,12 +1,16 @@
-.final_banner{
+.final_banner {
     position: relative;
 }
-.group{
+
+
+.group {
     position: absolute;
-    top: 0;
-    left:50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.header-progress {
+
+.order-progress {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +19,7 @@
     max-width: 139px;
 }
 
-.step {
+.point {
     position: relative;
     border: 1px solid #3F5D45;
     border-radius: 50%;
@@ -41,9 +45,10 @@
         display: none;
     }
 
-    &.completed {
+    &.end {
         background-color: #3F5D45;
         border-color: #3F5D45;
+
         &::before {
             content: "✓";
             position: absolute;
