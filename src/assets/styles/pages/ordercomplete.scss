@@ -1,0 +1,59 @@
+.final_banner{
+    position: relative;
+}
+.group{
+    position: absolute;
+    top: 0;
+    left:50px;
+}
+.header-progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 139px;
+}
+
+.step {
+    position: relative;
+    border: 1px solid #3F5D45;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: #3F5D45;
+    z-index: 1;
+    box-sizing: border-box;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        width: 46px;
+        height: 1px;
+        background-color: #3F5D45;
+        transform: translateY(-50%);
+        z-index: 0;
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+
+    &.completed {
+        background-color: #3F5D45;
+        border-color: #3F5D45;
+        &::before {
+            content: "✓";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 10px;
+            font-weight: bold;
+            color: #EAF0ED;
+            z-index: 2;
+        }
+    }
+}
