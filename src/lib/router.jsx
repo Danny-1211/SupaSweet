@@ -5,6 +5,7 @@ import Products from '../pages/Products.jsx';
 import Login from '../pages/Login.jsx';
 import Cart from '../pages/Cart.jsx';
 import Checkout from '../pages/Checkout.jsx';
+import OrderComplete from '../pages/OrderComplete.jsx';
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
             {
                 path: "checkout",
                 element: <Checkout />
+            },
+            {
+                path: "OrderComplete",
+                element: <OrderComplete />
             }
         ]
     }

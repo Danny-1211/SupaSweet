@@ -43,7 +43,7 @@ export function returnFilterProducts(products, category) {
 export function calculateTotalPage(dataLength, maxCount) {
     return Math.ceil(dataLength / maxCount)
 }
-
+//目前這個頁數的所有品相
 export function getCurrentPageProducts(filterProducts, currentPage, maxCount) {
     const start = (currentPage - 1) * maxCount;
     const end = start + maxCount;

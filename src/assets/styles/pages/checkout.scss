@@ -58,3 +58,56 @@
     }
 
 }
+
+.input-credit {
+    position: relative;
+}
+
+.credit-icon {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+
+    @media(max-width:$break_sm) {
+        right: 16px;
+        top: 20px;
+    }
+}
+
+
+.custom-date, .custom-city {
+    position: relative;
+}
+
+.custom-date, .custom-city input {
+    appearance: textfield;
+}
+
+/* 隱藏 Chrome 預設上下箭頭 */
+.custom-date, .custom-city input::-webkit-outer-spin-button,
+.custom-date , .custom-city input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.label {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+
+    @media(max-width:$break_sm) {
+        left: 20px;
+        top: 16px;
+    }
+}
+
+.arrows {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+
+    @media(max-width:$break_sm) {
+        right: 20px;
+        top: 16px;
+    }
+}
