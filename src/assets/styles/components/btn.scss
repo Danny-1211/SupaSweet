@@ -1,0 +1,23 @@
+// link 按鈕的動畫樣式
+.btn {
+    position: relative;
+    display: inline-block;
+    // padding-bottom: 4px;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    /* 起點寬度為0 */
+    height: 1px;
+    background-color: #3F5D45;
+    transition: width 0.3s ease;
+    /* 動畫時間與曲線 */
+}
+
+.btn:hover::after {
+  width: 100%; /* hover 時滑出整條線 */
+}

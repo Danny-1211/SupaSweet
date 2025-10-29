@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
+import './assets/styles/components/btn.scss';
 import { Outlet } from 'react-router-dom';
 function App() {
   return (

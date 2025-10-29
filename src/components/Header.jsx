@@ -3,6 +3,7 @@ import logo from "../assets/images/logo-all-dark.svg";
 import logoMobile from "../assets/images/logotype-sm-dark.svg";
 import cart from "../assets/images/shopping_cart.png";
 import dehaze from "../assets/images/dehaze-24px.png";
+import { CATEGORY } from '../constant/rule.js';
 export function Header() {
     return (
         <header className="w-full mx-auto flex items-center justify-between px-[30px] py-[30px]
@@ -12,9 +13,9 @@ export function Header() {
             <img className="w-auto h-[18px] lg:hidden" src={logoMobile} alt="logoMobile" />
             <div className="flex items-center justify-between gap-[80px]">
                 <div className="hidden lg:flex justify-between items-center gap-[60px]">
-                    <Link to="/">首頁</Link>
-                    <Link to="/products">甜點</Link>
-                    <Link to="/login">登入</Link>
+                    <Link className="btn" to="/">首頁</Link>
+                    <Link  className="btn" to={`/products?category=${CATEGORY.ALL.value}`}>甜點</Link>
+                    <Link  className="btn" to="/login">登入</Link>
                 </div>
                 <Link to="/cart">
                     <img className="w-auto h-[24px] cursor-pointer" src={cart} alt="cart" />

@@ -10,22 +10,29 @@ import dontReasonSlogan from '../assets/images/dontReason.png';
 import dontReasonSloganMobile from '../assets/images/dontReason_horizan.png';
 import { useProducts } from "../hooks/useProducts";
 import { CATEGORY } from '../constant/rule.js';
+import { Link } from 'react-router-dom';
 import "../assets/styles/pages/home.scss";
 export function Home() {
-    const { products, error } = useProducts({ category: CATEGORY.DAILY.value});
+    const { products, error } = useProducts({ category: CATEGORY.DAILY.value });
     return (
-        <div className="w-full mb-[60px] ">    
+        <div className="w-full mb-[60px] ">
             <div className="w-full flex flex-col justify-start lg:px-[42px] lg:py-[30px] lg:mb-[80px]">
                 <div>
                     <img className="w-full mx-auto object-cover sm:h-[277px] lg:max-w-[1024px] lg:h-[496px]" src={homeBanner} alt="banner" />
                 </div>
                 <div className="w-full flex items-center justify-center gap-[1px] md:items-center md:justify-center md:-mt-[89px] lg:items-center lg:justify-center lg:-mt-[89px]">
-                    <div className="banner-today h-[180px] w-[140px] px-[52px] py[40px] lg:w-[260px] lg:h-[256px]">
-                    </div>
-                    <div className="banner-recommend h-[180px] w-[140px] px-[52px] py[40px] lg:w-[260px] lg:h-[256px]">
-                    </div>
-                    <div className="banner-new h-[180px] w-[140px] px-[52px] py[40px] lg:w-[260px] lg:h-[256px]">
-                    </div>
+                    <Link to={`/products?category=${CATEGORY.DAILY.value}`}>
+                        <div className="banner-today  h-[180px] w-[140px] px-[52px] py[40px] lg:w-[260px] lg:h-[256px]">
+                        </div>
+                    </Link>
+                    <Link to={`/products?category=${CATEGORY.RECOMMEND.value}`}>
+                        <div className="banner-recommend h-[180px] w-[140px] px-[52px] py[40px] lg:w-[260px] lg:h-[256px]">
+                        </div>
+                    </Link>
+                    <Link to={`/products?category=${CATEGORY.NEW.value}`}>
+                        <div className="banner-new h-[180px] w-[140px] px-[52px] py[40px] lg:w-[260px] lg:h-[256px]">
+                        </div>
+                    </Link>
                 </div>
             </div>
             {/* 為什麼要做甜點手機板 */}

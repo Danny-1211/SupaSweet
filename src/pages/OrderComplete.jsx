@@ -2,6 +2,7 @@ import final_banner from '../assets/images/final_banner.png';
 import pay_success from '../assets/images/pay_success.svg';
 import '../assets/styles/pages/OrderComplete.scss'
 import { Link } from "react-router-dom";
+import { CATEGORY } from '../constant/rule.js';
 export function OrderComplete() {
     return (
         <div className="box">
@@ -39,13 +40,13 @@ export function OrderComplete() {
                             </div>
                             <img className="object-cover w-full max-w-[189px] h-[45px]" src={pay_success} alt="pay_success" />
                         </div>
-                        <div className="btn flex justify-center items-center bg-[#FFE180] py-[17px] px-[102px] whitespace-nowrap">
-                            <Link to="/">
+                        <Link to={`/products?category=${CATEGORY.ALL.value}`}>
+                            <div className="btn flex justify-center items-center bg-[#FFE180] py-[17px] px-[102px] whitespace-nowrap">
                                 <button type="button">
                                     <p className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[24px] font-semibold py-[17px] px-[20px]">繼續逛逛</p>
                                 </button>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

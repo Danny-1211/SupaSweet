@@ -174,7 +174,7 @@ function PostBillForm() {
                 <div className="address-title flex justify-between items-center">
                     <p className="text-[#EAF0ED] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">地址</p>
                     <div className="flex gap-[8px]">
-                        <input type="checkbox" id="address" name="address"  />
+                        <input type="checkbox" id="address" name="address" />
                         <label className="text-[#EAF0ED] font-['PingFang TC'] leading-[36px] text-[16px] font-semibold" for="address">同運送地址</label>
                     </div>
                 </div>
@@ -225,21 +225,26 @@ export function Checkout() {
         <div className="w-full lg:max-w-[1024px] lg:mx-auto lg:flex lg:justify-center lg:items-start lg:gap-[20px] lg:mb-[60px]">
             <main className="flex flex-col">
                 {form}
-                <div className="submit flex justify-center items-center bg-[#FFE180] py-[19px]">
-                    {
-                        currentStop != 3 && <button type="button">
+
+                {
+                    currentStop != 3 &&
+                    <div className="submit  flex justify-center items-center bg-[#FFE180] py-[19px]">
+                        <button type="button">
                             <p className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[24px] font-semibold py-[17px] px-[20px]">下一步</p>
                         </button>
-                    }
-                    {
-                        currentStop == 3 &&
-                        <Link to="/OrderComplete">
+                    </div>
+                }
+                {
+                    currentStop == 3 &&
+                    <Link to="/OrderComplete">
+                        <div className="submit  flex justify-center items-center bg-[#FFE180] py-[19px]">
                             <button type="button">
                                 <p className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[24px] font-semibold py-[17px] px-[20px]">確認結帳</p>
                             </button>
-                        </Link>
-                    }
-                </div>
+                        </div>
+                    </Link>
+                }
+
             </main>
             <div className="info hidden lg:flex lg:flex-col lg:gap-[20px]">
                 <div className="info-summary border border-[#EAF0ED] ">

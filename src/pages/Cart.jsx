@@ -4,6 +4,7 @@ import cart_p3 from "../assets/images/cart-p3.png";
 import minus from "../assets/images/minus.svg";
 import add from "../assets/images/add.svg";
 import delete_icon from "../assets/images/ic_delete.svg";
+import { Link } from 'react-router-dom';
 export function Cart() {
     return (
         <div className="w-full lg:flex lg:max-w-[1024px] lg:mx-auto lg:justify-between lg:items-start lg:gap-[20px]   lg:mt-[60px]">
@@ -37,7 +38,7 @@ export function Cart() {
                                 </div>
                             </div>
                         </div>
-                        <div className="item-result w-full  max-w-[315px] flex justify-end items-center py-[30px] lg:max-w-[145px] lg:justify-between lg:gap-[39px]">
+                        <div className="item-result w-full  max-w-[315px] flex justify-end items-center py-[30px] lg:max-w-[145px] lg:justify-between lg:gap-[39px] lg:whitespace-nowrap">
                             <h5 className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">NT$ 900</h5>
                             <img className="hidden lg:block" src={delete_icon} alt="delete_icon" />
                         </div>
@@ -66,7 +67,7 @@ export function Cart() {
                                 </div>
                             </div>
                         </div>
-                        <div className="item-result w-full  max-w-[315px] flex justify-end items-center py-[30px] lg:max-w-[145px] lg:justify-between lg:gap-[39px]">
+                        <div className="item-result w-full  max-w-[315px] flex justify-end items-center py-[30px] lg:max-w-[145px] lg:justify-between lg:gap-[39px] lg:whitespace-nowrap">
                             <h5 className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">NT$ 900</h5>
                             <img className="hidden lg:block" src={delete_icon} alt="delete_icon" />
                         </div>
@@ -95,7 +96,7 @@ export function Cart() {
                                 </div>
                             </div>
                         </div>
-                        <div className="item-result w-full  max-w-[315px] flex justify-end items-center py-[30px] lg:max-w-[145px] lg:justify-between lg:gap-[39px]">
+                        <div className="item-result w-full  max-w-[315px] flex justify-end items-center py-[30px] lg:max-w-[145px] lg:justify-between lg:gap-[39px] lg:whitespace-nowrap">
                             <h5 className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">NT$ 900</h5>
                             <img className="hidden lg:block" src={delete_icon} alt="delete_icon" />
                         </div>
@@ -124,11 +125,13 @@ export function Cart() {
                         </div>
                     </div>
                 </div>
-                <div className="Checkout bg-[#FFE180] flex  justify-center items-center  py-[16px] px-[164px] whitespace-nowrap lg:px-[130px]">
-                    <button type="button">
-                        <p className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[24px] font-semibold">結帳</p>
-                    </button>
-                </div>
+                <Link to="/checkout">
+                    <div className="Checkout bg-[#FFE180] flex  justify-center items-center  py-[16px] px-[164px] whitespace-nowrap lg:px-[130px]">
+                        <button type="button">
+                            <p className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[24px] font-semibold">結帳</p>
+                        </button>
+                    </div>
+                </Link>
             </div>
         </div>
     )

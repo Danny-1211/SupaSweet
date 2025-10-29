@@ -23,7 +23,7 @@ export function Card({ product }) {
                         <p className="text-[#3F5D45] font-['PingFang_TC'] font-semibold leading-[20px] text-[20px] text-center lg:text-[24px] ">NT$ {product.price ? product.price : '0'}</p>
                     </div>
                 </div>
-                <div className="card-addCart w-full whitespace-nowrap bg-[#EAF0ED] border-2 border-[#EAF0ED] flex justify-center items-center px-[90px] py-[16px]
+                <div className=" card-addCart w-full whitespace-nowrap bg-[#EAF0ED] border-2 border-[#EAF0ED] flex justify-center items-center px-[90px] py-[16px]
                 lg:px-[63px] ">
                     <p className="text-[#3F5D45] font-['PingFang_TC'] font-semibold text-[24px] leading-[20px]">加入購物車</p>
                 </div>

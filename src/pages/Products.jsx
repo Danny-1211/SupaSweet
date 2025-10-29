@@ -5,11 +5,14 @@ import arrowLeftIcon from '../assets/images/arrow_left.png';
 import arrowRightIcon from '../assets/images/arrow_right.png';
 import { useProducts, useCategorise, usePagination } from '../hooks/useProducts.js';
 import { CATEGORY, MAX_COUNT } from '../constant/rule.js';
+import { useSearchParams } from 'react-router-dom';
 export function Products() {
     // 這一頁先全拿,目錄篩選的事情就交給介面處理,不根據目錄改變來請求 api
     const { products, error } = useProducts({ category: CATEGORY.ALL.value });
-    // 選到哪個類別
-    let [selectedCategory, setSelectedCategory] = useState(CATEGORY.ALL.value);
+    // 從首頁點卡片來選擇目錄
+    const [searchParams, setSearchParams] = useSearchParams();
+    // 選到哪個類別，先偵測是不是人從別的頁面帶值來如果有就用參數的目錄，不然就預設全部ˇ
+    let [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') ? searchParams.get('category') : CATEGORY.ALL.value);
     // 渲染類別
     const categories = useCategorise(products);
     // 分頁
