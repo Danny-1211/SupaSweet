@@ -29,8 +29,8 @@ export function OrderComplete() {
                 </div>
             </div>
             <div className="final-desktop hidden lg:flex lg:mb-[60px]">
-                <div className="final_banner w-full">
-                    <img className=" w-full object-cover  h-[598px] lg:h-700px]" src={final_banner} alt="final_banner" />
+                <div className="final_banner w-full max-w-[1024px] mx-auto ">
+                    <img className=" object-cover w-full h-[598px] lg:h-700px]" src={final_banner} alt="final_banner" />
                     <div className="group  flex flex-col justify-center items-center gap-[51px]">
                         <div className="sub-group w-full flex flex-col justify-center items-center gap-[31px]">
                             <div className="order-progress">

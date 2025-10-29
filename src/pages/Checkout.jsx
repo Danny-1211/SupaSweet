@@ -116,7 +116,7 @@ function PaymentForm() {
                 <p className="text-[#EAF0ED] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">背面末三碼</p>
                 <div className="CSC-input  flex justify-start items-start gap-[9px] ">
                     <div className="CSC-number  w-full  flex flex-col justify-start items-start gap-[8px]">
-                        <input className=" w-full bg-[#EAF0ED] py-[17px] pl-[20px]" type="number" name="" id="" placeholder="123" />
+                        <input className=" w-full bg-[#EAF0ED] py-[17px] pl-[20px]" type="text" name="csc" id="csc" placeholder="123" />
                     </div>
                 </div>
             </div>
@@ -210,7 +210,7 @@ function PostBillForm() {
 
 export function Checkout() {
     // 1 = 運送表單 2 = 付款表單 3 = 發票表單
-    const [currentStop, setCurrentStop] = useState(3);
+    const [currentStop, setCurrentStop] = useState(1);
     let form;
 
     if (currentStop == 1) {
@@ -228,7 +228,7 @@ export function Checkout() {
 
                 {
                     currentStop != 3 &&
-                    <div className="submit  flex justify-center items-center bg-[#FFE180] py-[19px]">
+                    <div className="submit  flex justify-center items-center bg-[#FFE180] py-[19px]" onClick={() => setCurrentStop(currentStop + 1)}>
                         <button type="button">
                             <p className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[24px] font-semibold py-[17px] px-[20px]">下一步</p>
                         </button>
