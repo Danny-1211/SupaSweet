@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 function DeliveryForm() {
     return (
         <div className="w-full bg-[#3F5D45] flex flex-col items-center justify-start  gap-[20px]  px-[30px] py-[30px]">
-            <div className="header  w-full flex justify-between items-center px-[5px] ">
+            <div className="header  w-full flex justify-between items-center ">
                 <div className="header-title text-[#EAF0ED] font-['PingFang TC'] leading-[20px] text-[36px] font-semibold ">運送</div>
                 <div className="header-progress">
                     <div className="step current" aria-label="step 1 complete"></div>
@@ -65,7 +65,7 @@ function DeliveryForm() {
 function PaymentForm() {
     return (
         <div className="w-full bg-[#3F5D45] flex flex-col items-center justify-center gap-[20px] px-[30px] py-[30px]">
-            <div className="header w-full flex justify-between items-center px-[5px]">
+            <div className="header w-full flex justify-between items-center">
                 <div className="header-title text-[#EAF0ED] font-['PingFang TC'] leading-[20px] text-[36px] font-semibold ">付款</div>
                 <div className="header-progress">
                     <div className="step completed" aria-label="step 1 complete"></div>
