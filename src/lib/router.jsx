@@ -23,6 +23,6 @@ export const router = createBrowserRouter(
         },
     ],
     {
-        basename: '/SupaSweet', 
+        basename: '/SupaSweet',  // repo name
     }
 )
