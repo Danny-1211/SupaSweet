@@ -1,3 +1,12 @@
+import { createBrowserRouter } from "react-router-dom";
+import App from "../App";
+import Home from "../pages/Home";
+import Products from "../pages/Products";
+import Login from "../pages/Login";
+import Cart from "../pages/Cart";
+import Checkout from "../pages/Checkout";
+import OrderComplete from "../pages/OrderComplete";
+
 export const router = createBrowserRouter(
     [
         {
@@ -14,6 +23,6 @@ export const router = createBrowserRouter(
         },
     ],
     {
-        basename: '/SupaSweet', // 👈 一樣，跟 repo 名稱完全一樣
+        basename: '/SupaSweet', 
     }
 )
