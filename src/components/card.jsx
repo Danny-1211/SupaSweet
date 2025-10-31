@@ -6,13 +6,13 @@ export function Card({ product }) {
         <>
             <div className="card flex-shrink-0  w-full  flex flex-col justify-between items-center  lg:w-[300px]  border border-[#EAF0ED]">
                 <div className="card-img w-full h-[300px] flex items-center justify-center overflow-hidden">
-                    <img className="object-cover w-full h-full" src={product.pic} alt={product.name} />
+                    <img className="object-cover w-full h-full" src={product.pic} alt={product.name} loading="lazy"/>
                     <div className="card-tag flex flex-col justify-center items-center writing-vertical bg-[#3F5D45] 
                     text-[#EAF0ED] tracking-[0.2rem] font-['PingFang_TC'] font-semibold leading-[16px] text-[20px] px-[10px] py-[10px]">
                         <p>{CATEGORY_LIST.find(e => e.value == product.category) ? CATEGORY_LIST[CATEGORY_LIST.findIndex(e => e.value == product.category)].label : '本日精選'}</p>
                     </div>
                     <div className="card-favorite">
-                        <img src={favoriteIcon} alt="favoriteIcon" />
+                        <img src={favoriteIcon} alt="favoriteIcon" loading="lazy"/>
                     </div>
                 </div>
                 <div className="card-infor w-full flex justify-around items-center ">

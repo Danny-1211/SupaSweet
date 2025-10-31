@@ -14,23 +14,23 @@ export function Login() {
                 </div>
                 <div className="login-connect w-full  bg-[#EAF0ED] flex  justify-center items-center px-[30px] py-[30px]">
                     <div className="w-full max-w-[105px] max-h-[16px] bg-[#FFFFFF] flex justify-center items-center py-[18px] px-[16px] border-r border-[#8DA291] ">
-                        <img src={fb} alt="fb" />
+                        <img src={fb} alt="fb" loading="lazy"/>
                     </div>
                     <div className="w-full max-w-[105px] max-h-[16px] bg-[#FFFFFF] flex justify-center items-center py-[18px] px-[16px] border-r border-[#8DA291]">
-                        <img src={yahoo} alt="yahoo" />
+                        <img src={yahoo} alt="yahoo" loading="lazy"/>
                     </div>
                     <div className="w-full max-w-[105px] max-h-[16px] bg-[#FFFFFF] flex justify-center items-center py-[18px] px-[16px]">
-                        <img src={google} alt="google" />
+                        <img src={google} alt="google" loading="lazy"/>
                     </div>
                 </div>
                 <div className="login-input w-full bg-[#3F5D45] flex flex-col justify-start items-center gap-[16px]  px-[35px] py-[27px]">
                     <div className="input-accout">
-                        <img className="account-icon" src={person} alt="person" />
+                        <img className="account-icon" src={person} alt="person" loading="lazy"/>
                         <input className="text-[#8DA291] bg-[#EAF0ED] py-[18px] pl-[60px] w-[315px]" type="text" placeholder="電子信箱/手機號碼" name="" id="" />
                     </div>
                     <div className="input-password">
                         <img className="password-icon" src={key} alt="key" />
-                        <input className="text-[#8DA291] bg-[#EAF0ED] py-[18px] pl-[60px] w-[315px]" type="text" placeholder="請輸入使用者密碼" name="" id="" />
+                        <input className="text-[#8DA291] bg-[#EAF0ED] py-[18px] pl-[60px] w-[315px]" type="text" placeholder="請輸入使用者密碼" name="" id="" loading="lazy"/>
                     </div>
                     <div className="login-log w-full max-w-[315px] flex gap-[8px] justify-start items-center">
                         <input type="checkbox" name="log" id="" />
@@ -50,15 +50,15 @@ export function Login() {
                     </div>
                     <div className="login-input w-full bg-[#3F5D45] flex flex-col justify-start items-center gap-[16px]  px-[35px] py-[27px]">
                         <div className="input-accout">
-                            <img className="account-icon" src={person} alt="person" />
+                            <img className="account-icon" src={person} alt="person" loading="lazy"/>
                             <input className="text-[#8DA291] bg-[#EAF0ED] py-[18px] pl-[60px] w-[315px]" type="text" placeholder="電子信箱/手機號碼" name="" id="" />
                         </div>
                         <div className="input-password">
-                            <img className="password-icon" src={key} alt="key" />
+                            <img className="password-icon" src={key} alt="key" loading="lazy"/>
                             <input className="text-[#8DA291] bg-[#EAF0ED] py-[18px] pl-[60px] w-[315px]" type="text" placeholder="請輸入使用者密碼" name="" id="" />
                         </div>
                         <div className="login-log w-full max-w-[315px] flex gap-[8px] justify-start items-center">
-                            <input type="checkbox" name="log" id="" />
+                            <input type="checkbox" name="log" id="" loading="lazy"/>
                             <p className="text-[#EAF0ED] font-['PingFang TC'] leading-[36px] text-[16px] font-semibold">記住我</p>
                         </div>
                     </div>
@@ -71,13 +71,13 @@ export function Login() {
                         <h2 className="text-[#8DA291] font-['PingFang TC'] leading-[36px] text-[24px] font-light">—— 連結社群帳號 ——</h2>
                     </div>
                     <div className=" w-full max-w-[330px] bg-[#FFFFFF] flex justify-center r  px-[118px] py-[12px] items-center">
-                        <img className="max-w-[94px] max-h-[31px]" src={fb} alt="fb" />
+                        <img className="max-w-[94px] max-h-[31px]" src={fb} alt="fb" loading="lazy" />
                     </div>
                     <div className="w-full max-w-[330px] bg-[#FFFFFF] flex justify-center r  px-[118px] py-[12px] items-center">
-                        <img className="max-w-[94px] max-h-[31px]" src={google} alt="google" />
+                        <img className="max-w-[94px] max-h-[31px]" src={google} alt="google" loading="lazy"/>
                     </div>
                     <div className="w-full max-w-[330px] bg-[#FFFFFF] flex justify-center r  px-[118px] py-[12px] items-center">
-                        <img className="max-w-[94px] max-h-[31px]" src={yahoo} alt="yahoo" />
+                        <img className="max-w-[94px] max-h-[31px]" src={yahoo} alt="yahoo" loading="lazy"/>
                     </div>
                 </div>
             </div>

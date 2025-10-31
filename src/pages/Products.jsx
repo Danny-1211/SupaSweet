@@ -26,7 +26,7 @@ export function Products() {
     return (
         <div className="w-full flex flex-col justify-center items-center mb-[60px]">
             <div className="products-banner w-full lg:max-w-[1024px] mx-auto">
-                <img className="w-full mx-auto object-cover sm:h-[277px]  lg:h-[496px]" src={productBanner} alt="productBanner" />
+                <img className="w-full mx-auto object-cover sm:h-[277px]  lg:h-[496px]" src={productBanner} alt="productBanner" loading="lazy"/>
             </div>
             <div className="products-list w-full mx-auto flex flex-col justify-center items-center gap-[30px] lg:max-w-[1024px] lg:px-0 lg:flex-row lg:items-start
             lg:justify-center lg:gap-[100px] lg:mt-[40px]">
@@ -60,7 +60,7 @@ export function Products() {
                     </div>
                     <div className="items-pagination mt-[30px]">
                         <ul className="flex lg:gap-[10px]">
-                            <li><button onClick={() => pagination.prePage()} className="active:bg-[#EAF0ED] flex justify-center items-center py-[18px] px-[18px]"><img src={arrowLeftIcon} alt="arrowLeftIcon" /></button></li>
+                            <li><button onClick={() => pagination.prePage()} className="active:bg-[#EAF0ED] flex justify-center items-center py-[18px] px-[18px]"><img src={arrowLeftIcon} alt="arrowLeftIcon" loading="lazy"/></button></li>
                             {
                                 Array.from({ length: pagination.totalPage }, (e, index) => index + 1).map((pageNum, index) => (
                                     <li key={index} onClick={() => pagination.setCurrentPage(pageNum)} className={`flex justify-center items-center py-[18px] px-[18px]
@@ -71,7 +71,7 @@ export function Products() {
                                     </li>
                                 ))
                             }
-                            <li><button onClick={() => pagination.nextPage()} className="active:bg-[#EAF0ED] flex justify-center items-center py-[18px] px-[18px]"><img src={arrowRightIcon} alt="arrowRightIcon" /></button></li>
+                            <li><button onClick={() => pagination.nextPage()} className="active:bg-[#EAF0ED] flex justify-center items-center py-[18px] px-[18px]"><img src={arrowRightIcon} alt="arrowRightIcon" loading="lazy"/></button></li>
                         </ul>
                     </div>
                 </div>

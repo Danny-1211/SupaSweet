@@ -41,16 +41,16 @@ function DeliveryForm() {
                         <span class="label  text-[#8DA291] font-['PingFang TC'] leading-[20px] text-[16px] font-light">高雄市</span>
                         <input className=" w-full bg-[#EAF0ED] py-[17px] pl-[20px]" type="number" id="month" min="1" max="12" readonly />
                         <div class="arrows flex flex-col justify-center items-center">
-                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" /></button>
-                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" /></button>
+                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" loading="lazy" /></button>
+                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" loading="lazy" /></button>
                         </div>
                     </div>
                     <div class="custom-city w-full">
                         <span class="label text-[#8DA291] font-['PingFang TC'] leading-[20px] text-[16px] font-light">新興區</span>
                         <input className=" w-full bg-[#EAF0ED] py-[17px] pl-[20px]" type="text" id="date" min="1" max="31" readonly />
                         <div class="arrows flex flex-col justify-center items-center">
-                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" /></button>
-                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" /></button>
+                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" loading="lazy"/></button>
+                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" loading="lazy"/></button>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ function PaymentForm() {
             <div className="credit w-full flex flex-col  justify-start gap-[9px] px-[5px] ">
                 <p className="text-[#EAF0ED] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">信用卡卡號</p>
                 <div className="input-credit w-full flex items-center justify-center">
-                    <img className="credit-icon" src={credit} alt="credit" />
+                    <img className="credit-icon" src={credit} alt="credit" loading="lazy"/>
                     <input className=" w-full bg-[#EAF0ED] py-[18px] pl-[20px]" type="tel" name="" id="" placeholder="9012-3456-7890-1234" />
                 </div>
             </div>
@@ -98,16 +98,16 @@ function PaymentForm() {
                         <span class="label  text-[#8DA291] font-['PingFang TC'] leading-[20px] text-[16px] font-light">月</span>
                         <input className=" w-full bg-[#EAF0ED] py-[17px] pl-[20px]" type="number" id="month" min="1" max="12" readonly />
                         <div class="arrows flex flex-col justify-center items-center">
-                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" /></button>
-                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" /></button>
+                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" loading="lazy"/></button>
+                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" loading="lazy"/></button>
                         </div>
                     </div>
                     <div class="custom-date w-full">
                         <span class="label text-[#8DA291] font-['PingFang TC'] leading-[20px] text-[16px] font-light">日</span>
                         <input className=" w-full bg-[#EAF0ED] py-[17px] pl-[20px]" type="number" id="date" min="1" max="31" readonly />
                         <div class="arrows flex flex-col justify-center items-center">
-                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" /></button>
-                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" /></button>
+                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" loading="lazy"/></button>
+                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" loading="lazy"/></button>
                         </div>
                     </div>
                 </div>
@@ -183,16 +183,16 @@ function PostBillForm() {
                         <span class="label  text-[#8DA291] font-['PingFang TC'] leading-[20px] text-[16px] font-light">高雄市</span>
                         <input className=" w-full bg-[#EAF0ED] py-[17px] pl-[20px]" type="number" id="month" min="1" max="12" readonly />
                         <div class="arrows flex flex-col justify-center items-center">
-                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" /></button>
-                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" /></button>
+                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" loading="lazy"/></button>
+                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" loading="lazy"/></button>
                         </div>
                     </div>
                     <div class="custom-city w-full">
                         <span class="label text-[#8DA291] font-['PingFang TC'] leading-[20px] text-[16px] font-light">新興區</span>
                         <input className=" w-full bg-[#EAF0ED] py-[17px] pl-[20px]" type="text" id="date" min="1" max="31" readonly />
                         <div class="arrows flex flex-col justify-center items-center">
-                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" /></button>
-                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" /></button>
+                            <button class="-mb-[5px]"><img src={arrow_up} alt="arrow_up" loading="lazy"/></button>
+                            <button class="-mt-[5px]"><img src={arrow_down} alt="arrow_up" loading="lazy"/></button>
                         </div>
                     </div>
                 </div>
@@ -275,7 +275,7 @@ export function Checkout() {
                     <div className="list-items flex flex-col justify-start items-center">
                         <div className="item flex  justify-center items-center gap-[20px] px-[20px] py-[16px]">
                             <div className="info-pic flex-shrink-0 ">
-                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p1} alt="cart_p1" />
+                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p1} alt="cart_p1" loading="lazy"/>
                             </div>
                             <div className="menu-title w-full flex flex-col justify-start items-start gap-[8px] px-[19px]">
                                 <h5 className="text-[#8DA291] font-['PingFang TC'] leading-[20px] text-[16px] font-light">焦糖瑪卡龍 (2)</h5>
@@ -284,7 +284,7 @@ export function Checkout() {
                         </div>
                         <div className="item flex  justify-center items-center gap-[20px] px-[20px] py-[16px]">
                             <div className="info-pic flex-shrink-0 ">
-                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p2} alt="cart_p2" />
+                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p2} alt="cart_p2" loading="lazy"/>
                             </div>
                             <div className="menu-title w-full flex flex-col justify-start items-start gap-[8px] px-[19px]">
                                 <h5 className="text-[#8DA291] font-['PingFang TC'] leading-[20px] text-[16px] font-light">焦糖瑪卡龍 (2)</h5>
@@ -293,7 +293,7 @@ export function Checkout() {
                         </div>
                         <div className="item flex  justify-center items-center gap-[20px] px-[20px] py-[16px]">
                             <div className="info-pic flex-shrink-0 ">
-                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p3} alt="cart_p3" />
+                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p3} alt="cart_p3" loading="lazy"/>
                             </div>
                             <div className="menu-title w-full flex flex-col justify-start items-start gap-[8px] px-[19px]">
                                 <h5 className="text-[#8DA291] font-['PingFang TC'] leading-[20px] text-[16px] font-light">焦糖瑪卡龍 (2)</h5>

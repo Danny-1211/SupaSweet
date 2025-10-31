@@ -18,7 +18,7 @@ export function Home() {
         <div className="w-full mb-[60px] ">
             <div className="w-full flex flex-col justify-start lg:px-[42px] lg:py-[30px] lg:mb-[80px]">
                 <div>
-                    <img className="w-full mx-auto object-cover sm:h-[277px] lg:max-w-[1024px] lg:h-[496px]" src={homeBanner} alt="banner" />
+                    <img className="w-full mx-auto object-cover sm:h-[277px] lg:max-w-[1024px] lg:h-[496px]" src={homeBanner} alt="banner" loading="lazy"/>
                 </div>
                 <div className="w-full flex items-center justify-center gap-[1px] md:items-center md:justify-center md:-mt-[89px] lg:items-center lg:justify-center lg:-mt-[89px]">
                     <Link to={`/products?category=${CATEGORY.DAILY.value}`}>
@@ -38,10 +38,10 @@ export function Home() {
             {/* 為什麼要做甜點手機板 */}
             <div className="whyDoMobile w-full flex flex-col items-center justify-center lg:hidden">
                 <div className="whyDo-slogan w-full flex justify-center items-center py-[30px] px-[90px]">
-                    <img className="w-[196px] lg:hidden" src={whyDoSloganMobile} alt="whyDoSloganMobile" />
+                    <img className="w-[196px] lg:hidden" src={whyDoSloganMobile} alt="whyDoSloganMobile" loading="lazy"/>
                 </div>
                 <div className="whyDo-banner w-full overflow-hidden h-[400px] lg:h-[420px]">
-                    <img className="w-full block h-full object-cover object-[center_70%] md:object-[center_50%]" src={whyDoBanner} alt="whyDoBanner" />
+                    <img className="w-full block h-full object-cover object-[center_70%] md:object-[center_50%]" src={whyDoBanner} alt="whyDoBanner" loading="lazy"/>
                 </div>
                 <div className="whyDo-content flex flex-col gap-[30px] -mt-[100px] bg-[#EAF0ED] px-[30px] py-[30px]   ">
                     <div>
@@ -59,7 +59,7 @@ export function Home() {
             {/* 為什麼要做甜點桌面板 */}
             <div className="whyDoDesktop hidden w-full h-[420px] lg:flex lg:flex-row-reverse lg:justify-center gap-[60px] lg:bg-[#EAF0ED] lg:py-[50px] lg:mb-[80px]" >
                 <div className="whyDo-Desktop-slogan -mt-[70px]">
-                    <img className="w-[89px]" src={whyDoSlogan} alt="whyDoSlogan" />
+                    <img className="w-[89px]" src={whyDoSlogan} alt="whyDoSlogan" loading="lazy"/>
                 </div>
                 <div className="whyDo-Desktop-content bg-[#EAF0ED] flex flex-row-reverse">
                     <div className="Desktop-conten-one ">
@@ -74,16 +74,16 @@ export function Home() {
                     </div>
                 </div>
                 <div className="whyDo-Desktop-banner -mt-[70px]">
-                    <img className="w-[460px] h-[460px] object-cover " src={whyDoBanner} alt="whyDoBanner" />
+                    <img className="w-[460px] h-[460px] object-cover " src={whyDoBanner} alt="whyDoBanner" loading="lazy"/>
                 </div>
             </div>
             {/* 為什麼一定要吃甜點手機板 */}
             <div className="whyEatMobile w-full flex flex-col items-center justify-center lg:hidden">
                 <div className="whyEat-slogan w-full flex justify-center items-center py-[30px] px-[90px]">
-                    <img className="w-[196px] lg:hidden" src={whyEatSloganMobile} alt="whyEatSloganMobile" />
+                    <img className="w-[196px] lg:hidden" src={whyEatSloganMobile} alt="whyEatSloganMobile" loading="lazy"/>
                 </div>
                 <div className="whyEat-banner w-full overflow-hidden h-[400px] lg:h-[420px]">
-                    <img className="w-full block h-full object-cover object-[center_70%] md:object-[center_50%]" src={whyEatBanner} alt="whyEatBanner" />
+                    <img className="w-full block h-full object-cover object-[center_70%] md:object-[center_50%]" src={whyEatBanner} alt="whyEatBanner" loading="lazy"/>
                 </div>
                 <div className="whyEat-content flex flex-col gap-[30px] -mt-[100px] bg-[#EAF0ED] px-[30px] py-[30px]   ">
                     <div>
@@ -101,10 +101,10 @@ export function Home() {
             {/* 為什麼一定要吃甜點桌面板 */}
             <div className="whyEatDesktop hidden w-full h-[420px] lg:flex lg:flex-row-reverse lg:justify-center gap-[60px] lg:bg-[#EAF0ED] lg:py-[50px]" >
                 <div className="whyEat-Desktop-banner -mt-[70px]">
-                    <img className="w-[460px] h-[460px] object-cover " src={whyEatBanner} alt="whyEatBanner" />
+                    <img className="w-[460px] h-[460px] object-cover " src={whyEatBanner} alt="whyEatBanner" loading="lazy"/>
                 </div>
                 <div className="whyEat-Desktop-slogan -mt-[70px]">
-                    <img className="w-[89px]" src={whyEatSlogan} alt="whyEatSlogan" />
+                    <img className="w-[89px]" src={whyEatSlogan} alt="whyEatSlogan" loading="lazy"/>
                 </div>
                 <div className="whyEat-Desktop-content bg-[#EAF0ED] flex flex-row-reverse">
                     <div className="Desktop-conten-one ">
@@ -121,8 +121,8 @@ export function Home() {
             </div>
             {/* 想吃甜點不需要理由 */}
             <div className="dontReason-slogan w-full flex justify-center items-center  px-[74px] py-[30px] lg:py-[50px]">
-                <img className="hidden lg:flex lg:w-[89px]" src={dontReasonSlogan} alt="dontReasonSlogan" />
-                <img className="w-[226px] lg:hidden" src={dontReasonSloganMobile} alt="dontReasonSloganMobile" />
+                <img className="hidden lg:flex lg:w-[89px]" src={dontReasonSlogan} alt="dontReasonSlogan" loading="lazy"/>
+                <img className="w-[226px] lg:hidden" src={dontReasonSloganMobile} alt="dontReasonSloganMobile" loading="lazy"/>
             </div>
             <div className="dontReason-List w-full flex justify-start  items-center overflow-x-auto no-scrollbar scroll-smooth  snap-x snap-mandatory px-[30px] 
                 gap-[50px] lg:justify-center  lg:gap-[20px] lg:max-w-[1024px] lg:mx-auto">

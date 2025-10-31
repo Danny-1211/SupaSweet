@@ -18,7 +18,7 @@ export function Cart() {
                         <div className="item-info w-full max-w-[315px] flex  justify-start items-start gap-[12px] py-[30px]  border-b border-[#EAF0ED]
                         lg:max-w-[690px] lg:justify-center lg:items-center">
                             <div className="info-pic flex-shrink-0 ">
-                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p1} alt="cart_p1" />
+                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p1} alt="cart_p1" loading="lazy"/>
                             </div>
                             <div className="info-menu  w-full flex flex-col justify-start items-start gap-[8px] lg:flex-row">
                                 <div className="menu-title w-full flex flex-col justify-start items-start gap-[8px] px-[19px]">
@@ -27,27 +27,27 @@ export function Cart() {
                                 </div>
                                 <div className="menu-btn flex w-full">
                                     <div className="btn-minus flex-shrink-0 py-[13px] px-[19px]">
-                                        <button type="button"> <img src={minus} alt="minus" /></button>
+                                        <button type="button"> <img src={minus} alt="minus" loading="lazy"/></button>
                                     </div>
                                     <div className="btn-num py-[13px] px-[19px]">
                                         <p>2</p>
                                     </div>
                                     <div className="btn-add flex-shrink-0 py-[13px] px-[19px]">
-                                        <button type="button"><img src={add} alt="add" /></button>
+                                        <button type="button"><img src={add} alt="add" loading="lazy"/></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="item-result w-full  max-w-[315px] flex justify-end items-center py-[30px] lg:max-w-[145px] lg:justify-between lg:gap-[39px] lg:whitespace-nowrap">
                             <h5 className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">NT$ 900</h5>
-                            <img className="hidden lg:block" src={delete_icon} alt="delete_icon" />
+                            <img className="hidden lg:block" src={delete_icon} alt="delete_icon" loading="lazy"/>
                         </div>
                     </div>
                     <div className="item flex flex-col justify-between items-end lg:flex-row lg:justify-between lg:items-center lg:gap-[38px] lg:w-full  lg:max-w-[690px]">
                         <div className="item-info w-full max-w-[315px] flex  justify-start items-start gap-[12px] py-[30px]  border-b border-[#EAF0ED]
                         lg:max-w-[690px] lg:justify-center lg:items-center">
                             <div className="info-pic flex-shrink-0 ">
-                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p2} alt="cart_p2" />
+                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p2} alt="cart_p2" loading="lazy"/>
                             </div>
                             <div className="info-menu  w-full flex flex-col justify-start items-start gap-[8px] lg:flex-row">
                                 <div className="menu-title w-full flex flex-col justify-start items-start gap-[8px] px-[19px]">
@@ -56,27 +56,27 @@ export function Cart() {
                                 </div>
                                 <div className="menu-btn flex w-full">
                                     <div className="btn-minus flex-shrink-0 py-[13px] px-[19px]">
-                                        <button type="button"> <img src={minus} alt="minus" /></button>
+                                        <button type="button"> <img src={minus} alt="minus" loading="lazy"/></button>
                                     </div>
                                     <div className="btn-num py-[13px] px-[19px]">
                                         <p>2</p>
                                     </div>
                                     <div className="btn-add flex-shrink-0 py-[13px] px-[19px]">
-                                        <button type="button"><img src={add} alt="add" /></button>
+                                        <button type="button"><img src={add} alt="add" loading="lazy"/></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="item-result w-full  max-w-[315px] flex justify-end items-center py-[30px] lg:max-w-[145px] lg:justify-between lg:gap-[39px] lg:whitespace-nowrap">
                             <h5 className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">NT$ 900</h5>
-                            <img className="hidden lg:block" src={delete_icon} alt="delete_icon" />
+                            <img className="hidden lg:block" src={delete_icon} alt="delete_icon" loading="lazy"/>
                         </div>
                     </div>
                     <div className="item flex flex-col justify-between items-end lg:flex-row lg:justify-between lg:items-center lg:gap-[38px] lg:w-full  lg:max-w-[690px]">
                         <div className="item-info w-full max-w-[315px] flex  justify-start items-start gap-[12px] py-[30px]  border-b border-[#EAF0ED]
                         lg:max-w-[690px] lg:justify-center lg:items-center">
                             <div className="info-pic flex-shrink-0 ">
-                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p3} alt="cart_p3" />
+                                <img className=" w-[140px] h-[100px] object-cover" src={cart_p3} alt="cart_p3" loading="lazy"/>
                             </div>
                             <div className="info-menu  w-full flex flex-col justify-start items-start gap-[8px] lg:flex-row">
                                 <div className="menu-title w-full flex flex-col justify-start items-start gap-[8px] px-[19px]">
@@ -85,20 +85,20 @@ export function Cart() {
                                 </div>
                                 <div className="menu-btn flex w-full">
                                     <div className="btn-minus flex-shrink-0 py-[13px] px-[19px]">
-                                        <button type="button"> <img src={minus} alt="minus" /></button>
+                                        <button type="button"> <img src={minus} alt="minus" loading="lazy"/></button>
                                     </div>
                                     <div className="btn-num py-[13px] px-[19px]">
                                         <p>2</p>
                                     </div>
                                     <div className="btn-add flex-shrink-0 py-[13px] px-[19px]">
-                                        <button type="button"><img src={add} alt="add" /></button>
+                                        <button type="button"><img src={add} alt="add" loading="lazy"/></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="item-result w-full  max-w-[315px] flex justify-end items-center py-[30px] lg:max-w-[145px] lg:justify-between lg:gap-[39px] lg:whitespace-nowrap">
                             <h5 className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[20px] font-semibold">NT$ 900</h5>
-                            <img className="hidden lg:block" src={delete_icon} alt="delete_icon" />
+                            <img className="hidden lg:block" src={delete_icon} alt="delete_icon" loading="lazy"/>
                         </div>
                     </div>
                 </div>

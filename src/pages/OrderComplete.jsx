@@ -8,7 +8,7 @@ export function OrderComplete() {
         <div className="box">
             <div className=" final w-full flex flex-col justify-center lg:hidden">
                 <div className="final_banner w-full">
-                    <img className=" w-full object-cover  h-[598px]" src={final_banner} alt="final_banner" />
+                    <img className=" w-full object-cover  h-[598px]" src={final_banner} alt="final_banner" loading="lazy"/>
                     <div className="group w-full flex flex-col justify-between gap-[209px]">
                         <div className="sub-group w-full flex flex-col justify-center items-center gap-[31px]">
                             <div className="order-progress">
@@ -16,11 +16,11 @@ export function OrderComplete() {
                                 <div className="point end"></div>
                                 <div className="point end"></div>
                             </div>
-                            <img className="object-cover w-full max-w-[189px] h-[45px]" src={pay_success} alt="pay_success" />
+                            <img className="object-cover w-full max-w-[189px] h-[45px]" src={pay_success} alt="pay_success" loading="lazy" />
                         </div>
                     </div>
                 </div>
-                <div className="btn flex justify-center items-center bg-[#FFE180] py-[17px] px-[102px] whitespace-nowrap">
+                <div className=" flex justify-center items-center bg-[#FFE180] py-[17px] px-[102px] whitespace-nowrap">
                     <Link to="/">
                         <button type="button">
                             <p className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[24px] font-semibold py-[17px] px-[20px]">繼續逛逛</p>
@@ -30,7 +30,7 @@ export function OrderComplete() {
             </div>
             <div className="final-desktop hidden lg:flex lg:mb-[60px]">
                 <div className="final_banner w-full max-w-[1024px] mx-auto ">
-                    <img className=" object-cover w-full h-[598px] lg:h-700px]" src={final_banner} alt="final_banner" />
+                    <img className=" object-cover w-full h-[598px] lg:h-700px]" src={final_banner} alt="final_banner" loading="lazy"/>
                     <div className="group  flex flex-col justify-center items-center gap-[51px]">
                         <div className="sub-group w-full flex flex-col justify-center items-center gap-[31px]">
                             <div className="order-progress">
@@ -38,7 +38,7 @@ export function OrderComplete() {
                                 <div className="point end"></div>
                                 <div className="point end"></div>
                             </div>
-                            <img className="object-cover w-full max-w-[189px] h-[45px]" src={pay_success} alt="pay_success" />
+                            <img className="object-cover w-full max-w-[189px] h-[45px]" src={pay_success} alt="pay_success" loading="lazy"/>
                         </div>
                         <Link to={`/products?category=${CATEGORY.ALL.value}`}>
                             <div className="btn flex justify-center items-center bg-[#FFE180] py-[17px] px-[102px] whitespace-nowrap">
