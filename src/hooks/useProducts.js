@@ -7,7 +7,8 @@ import { calculateEveryCategoryCount, returnFilterProducts, calculateTotalPage, 
 export function useProducts(options = {}) {
     const [products, setProducts] = useState([]);
     const [error, setError] = useState(null);
-
+    // loading 是否顯示
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
         fetchProducts();
     }, [
@@ -15,14 +16,24 @@ export function useProducts(options = {}) {
     ]);
 
     async function fetchProducts() {
+        setLoading(true);
+        setError(null);
         const { data, error } = await getProducts(options);
+
         if (error) {
             setError(error);
+            setLoading(false);
         } else {
             setProducts(data || []);
+            setLoading(false);
         }
     };
-    return { products, error };
+
+        // 手動重試
+    function retry() {
+        fetchProducts();
+    }
+    return { products, error, loading, retry };
 }
 
 // 計算每個產品分類他們各自的總數 hooks
@@ -54,13 +65,13 @@ export function usePagination(products, maxCount, category) {
     }
 
     const nextPage = () => {
-        if(currentPage < totalPage) {
+        if (currentPage < totalPage) {
             setCurrentPage(currentPage + 1)
         }
     }
 
     const prePage = () => {
-        if(currentPage > 1) {
+        if (currentPage > 1) {
             setCurrentPage(currentPage - 1)
         }
     }
