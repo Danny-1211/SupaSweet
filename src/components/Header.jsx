@@ -13,9 +13,15 @@ export function Header() {
             <img className="w-auto h-[18px] lg:hidden" src={logoMobile} alt="logoMobile" />
             <div className="flex items-center justify-between gap-[80px]">
                 <div className="hidden lg:flex justify-between items-center gap-[60px]">
-                    <Link className="btn" to="/">首頁</Link>
-                    <Link  className="btn" to={`/products?category=${CATEGORY.ALL.value}`}>甜點</Link>
-                    <Link  className="btn" to="/login">登入</Link>
+                    <Link className="btn" to="/">
+                        <p className="text-[#3F5D45] font-['PingFang TC'] leading-[25px] text-[16px] font-semibold">首頁</p>
+                    </Link>
+                    <Link className="btn" to={`/products?category=${CATEGORY.ALL.value}`}>
+                        <p className="text-[#3F5D45] font-['PingFang TC'] leading-[25px] text-[16px] font-semibold">甜點</p>
+                    </Link>
+                    <Link className="btn" to="/login">
+                        <p className="text-[#3F5D45] font-['PingFang TC'] leading-[25px] text-[16px] font-semibold">登入</p>
+                    </Link>
                 </div>
                 <Link to="/cart">
                     <img className="w-auto h-[24px] cursor-pointer" src={cart} alt="cart" />

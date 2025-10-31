@@ -26,13 +26,13 @@ export function Cart() {
                                     <p className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[16px]" >NT$ 450</p>
                                 </div>
                                 <div className="menu-btn flex w-full">
-                                    <div className="btn-minus flex-shrink-0 py-[13px] px-[19px]">
+                                    <div className="btn-minus flex-shrink-0 py-[13px] px-[19px] border border-[#EAF0ED]">
                                         <button type="button"> <img src={minus} alt="minus" loading="lazy"/></button>
                                     </div>
-                                    <div className="btn-num py-[13px] px-[19px]">
+                                    <div className="btn-num py-[13px] px-[19px] border border-[#EAF0ED]">
                                         <p>2</p>
                                     </div>
-                                    <div className="btn-add flex-shrink-0 py-[13px] px-[19px]">
+                                    <div className="btn-add flex-shrink-0 py-[13px] px-[19px] border border-[#EAF0ED] ">
                                         <button type="button"><img src={add} alt="add" loading="lazy"/></button>
                                     </div>
                                 </div>
@@ -55,13 +55,13 @@ export function Cart() {
                                     <p className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[16px]" >NT$ 450</p>
                                 </div>
                                 <div className="menu-btn flex w-full">
-                                    <div className="btn-minus flex-shrink-0 py-[13px] px-[19px]">
+                                    <div className="btn-minus flex-shrink-0 py-[13px] px-[19px] border border-[#EAF0ED]">
                                         <button type="button"> <img src={minus} alt="minus" loading="lazy"/></button>
                                     </div>
-                                    <div className="btn-num py-[13px] px-[19px]">
+                                    <div className="btn-num py-[13px] px-[19px] border border-[#EAF0ED]">
                                         <p>2</p>
                                     </div>
-                                    <div className="btn-add flex-shrink-0 py-[13px] px-[19px]">
+                                    <div className="btn-add flex-shrink-0 py-[13px] px-[19px] border border-[#EAF0ED]">
                                         <button type="button"><img src={add} alt="add" loading="lazy"/></button>
                                     </div>
                                 </div>
@@ -84,13 +84,13 @@ export function Cart() {
                                     <p className="text-[#3F5D45] font-['PingFang TC'] leading-[20px] text-[16px]" >NT$ 450</p>
                                 </div>
                                 <div className="menu-btn flex w-full">
-                                    <div className="btn-minus flex-shrink-0 py-[13px] px-[19px]">
+                                    <div className="btn-minus flex-shrink-0 py-[13px] px-[19px] border border-[#EAF0ED]">
                                         <button type="button"> <img src={minus} alt="minus" loading="lazy"/></button>
                                     </div>
-                                    <div className="btn-num py-[13px] px-[19px]">
+                                    <div className="btn-num py-[13px] px-[19px] border border-[#EAF0ED]">
                                         <p>2</p>
                                     </div>
-                                    <div className="btn-add flex-shrink-0 py-[13px] px-[19px]">
+                                    <div className="btn-add flex-shrink-0 py-[13px] px-[19px] border border-[#EAF0ED]">
                                         <button type="button"><img src={add} alt="add" loading="lazy"/></button>
                                     </div>
                                 </div>
