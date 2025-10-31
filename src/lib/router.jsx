@@ -1,40 +1,28 @@
-import { createBrowserRouter } from 'react-router-dom';
-import App from '../App.jsx';
-import Home from '../pages/Home.jsx';
-import Products from '../pages/Products.jsx';
-import Login from '../pages/Login.jsx';
-import Cart from '../pages/Cart.jsx';
-import Checkout from '../pages/Checkout.jsx';
-import OrderComplete from '../pages/OrderComplete.jsx';
-export const router = createBrowserRouter([
+import { createBrowserRouter } from "react-router-dom";
+import App from "../App";
+import Home from "../pages/Home";
+import Products from "../pages/Products";
+import Login from "../pages/Login";
+import Cart from "../pages/Cart";
+import Checkout from "../pages/Checkout";
+import OrderComplete from "../pages/OrderComplete";
+
+export const router = createBrowserRouter(
+    [
+        {
+            path: "/",
+            element: <App />,
+            children: [
+                { index: true, element: <Home /> },
+                { path: "products", element: <Products /> },
+                { path: "login", element: <Login /> },
+                { path: "cart", element: <Cart /> },
+                { path: "checkout", element: <Checkout /> },
+                { path: "OrderComplete", element: <OrderComplete /> },
+            ],
+        },
+    ],
     {
-        path: "/",
-        element: <App />,
-        children: [
-            {
-                index: true,
-                element: <Home />
-            },
-            {
-                path: "products",
-                element: <Products />
-            },
-            {
-                path: "login",
-                element: <Login />
-            },
-            {
-                path: "cart",
-                element: <Cart />
-            },
-            {
-                path: "checkout",
-                element: <Checkout />
-            },
-            {
-                path: "OrderComplete",
-                element: <OrderComplete />
-            }
-        ]
+        basename: "/SupaSweet", // 👈 一定要跟你的 GitHub repo 名稱一模一樣！
     }
-])
+);
